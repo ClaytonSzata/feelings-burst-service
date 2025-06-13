@@ -1,0 +1,17 @@
+syntax = "proto3";
+// This proto file defines the communication layer for FeelingsBurst
+// This file is used by both the service and the client to define the interface between the two
+// Think of it as a contract between the different implementations.
+
+message DrillOneRequest {
+//  string query = 1;
+//  int32 page_number = 2;
+//  int32 results_per_page = 3;
+}
+
+message DrillOneResponse {
+}
+
+service FeelingsBurst {
+  rpc DrillOne(DrillOneRequest) returns (DrillOneResponse);
+}
